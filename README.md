@@ -1,7 +1,7 @@
 # New Movies
 Starter project from Chuangxin Tech.
 
-Please use python and releated frameworks to finish the project. 
+Fork the project and use python and releated frameworks to finish the project. 
 
 
 ## Task 1
