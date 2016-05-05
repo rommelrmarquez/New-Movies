@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}"/>
+        <script src="{% static 'bootstrap/js/jquery-2.2.3.min.js' %}"></script>
+        <script src="{% static 'bootstrap/js/jquery-2.2.3.js' %}"></script>
+        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+        {% block head%}{% endblock%}
+        <title> {% block title %}{% endblock %}</title>
+    </head>
+    <body>
+      <div class="container">
+        <ul class="nav nav-tabs">
+          <li role="presentation"><a href="/catalog/view_books">UPCOMING MOVIES</a></li>
+        </ul>
+        {% block body %}{% endblock %}
+      </div>
+    </body>
+</html>
