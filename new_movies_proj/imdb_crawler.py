@@ -21,6 +21,10 @@ class MovieCrawler(object):
 
     def __get_page_content(self):
         '''
+        @fn __get_page_content
+        @description
+            Retrieves the page content of imdb site and crawl through
+            its content to get the movie items
         '''
 
         response = requests.get(self.url)
@@ -44,6 +48,9 @@ class MovieCrawler(object):
 
     def __get_movie_overview_details(self, parent_elem):
         '''
+        @fn __get_movie_overview_details
+        @description
+            Get the details of the retrieve movie row from the imdb site
         '''
 
         # Get the movie poster url

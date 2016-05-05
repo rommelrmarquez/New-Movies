@@ -7,6 +7,9 @@ from new_movies.models import Movie
 
 def view_upcoming_movies(request):
     '''
+    @fn view_upcoming_movies
+    @description
+        Retrieves the upcoming movies list view
     '''
 
     context_dict = dict()
